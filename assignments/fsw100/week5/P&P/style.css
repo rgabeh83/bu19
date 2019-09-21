@@ -1,0 +1,141 @@
+/*mobile*/
+@media only screen and (max-width: 768px) {
+*  {
+        box-sizing: border-box;
+        font-size: 0px
+    }
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto;
+    grid-gap: 10px
+}
+#pinkheader{
+    background-color: #F5C6D6;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    height: 25vh
+
+}
+#pinkbox1 {
+    background-color: #EE2E84;
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+    height: 25vh
+}
+#pinkbox2 {
+    background-color: #EE2E84;
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+#pinkbox3 {
+    background-color: #EE2E84;
+    grid-row:  / 4;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+#pinkbox4 {
+    background-color: #EE2E84;
+    grid-row: 5 / 5;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+#bluebox1 {
+    background-color: #85CFD8;
+    grid-row: 6 / 6;
+    grid-column: 1 / 1;
+    height: 25vh
+
+}
+#bluebox2 {
+    background-color: #85CFD8;
+    grid-row: 7 / 7;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+#greenbox {
+    background-color: #8DC63F;
+    grid-row: 8 / 8;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+#orangebox {
+    background-color: #E76E34;
+    grid-row: 9 / 9;
+    grid-column: 1 / 1;
+    height: 25vh
+}
+        
+}
+/*larger screen*/
+@media only screen and (min-width: 768px) {
+* {
+    box-sizing: border-box;
+    font-size: 0px
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto, auto, auto, auto;
+    grid-gap: 10px
+}
+#pinkheader{
+    background-color: #F5C6D6;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+    height: 25vh
+
+}
+#pinkbox1 {
+    background-color: #EE2E84;
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+    height: 25vh
+}
+#pinkbox2 {
+    background-color: #EE2E84;
+    grid-row: 2 / 2;
+    grid-column: 2 / 3;
+    height: 25vh
+}
+#pinkbox3 {
+    background-color: #EE2E84;
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    height: 25vh
+}
+#pinkbox4 {
+    background-color: #EE2E84;
+    grid-row: 2 / 2;
+    grid-column: 4 / 4;
+    height: 25vh
+}
+#bluebox1 {
+    background-color: #85CFD8;
+    grid-row: 3 / 3;
+    grid-column: 1 / 3;
+    height: 25vh
+
+}
+#bluebox2 {
+    background-color: #85CFD8;
+    grid-row: 3 / 3;
+    grid-column: 3 / 5;
+    height: 25vh
+}
+#greenbox {
+    background-color: #8DC63F;
+    grid-row: 4 / 4;
+    grid-column: 1 / 4;
+    height: 25vh
+}
+#orangebox {
+    background-color: #E76E34;
+    grid-row: 4 / 4;
+    grid-column: 4 / 4;
+    height: 25vh
+}
+}
