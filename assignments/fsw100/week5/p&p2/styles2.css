@@ -1,0 +1,138 @@
+
+@media (max-width: 700px) 
+{
+.container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "sidebar1"
+    "content"
+    "sidebar2"
+    "footer";
+    grid-gap: 10px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white
+}
+.header {
+    background-color: gray;
+    grid-area: "header";
+    border-radius: 15px
+}
+.sidebar1 {
+    background-color: black;
+    border-radius: 15px
+    
+}
+.content {
+    background-color: gray;
+    grid-area: content;
+    border-radius: 15px
+
+}
+.sidebar2 {
+    background-color: lightgray;
+    border-radius: 15px
+
+}
+.footer {
+    background-color: black;
+    border-radius: 15px
+}
+}
+
+/*Tablet*/
+@media (min-width: 701px) and (max-width: 850px) {
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar1 main main main"
+    "sidebar2 sidebar2 sidebar2 sidebar2"
+    "footer footer footer footer";
+    height: 70vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    grid-gap: 20px;
+}
+.header {
+    background-color: gray;
+    grid-area: header;
+    border-radius: 15px;
+    padding: 10px
+}
+.sidebar1 {
+    background-color: black;
+    grid-area: sidebar1;
+    border-radius: 15px;
+    padding: 10px
+}
+.sidebar2 {
+    background-color: lightgray;
+    grid-area: sidebar2;
+    border-radius: 15px;
+    padding: 10px
+}
+.content {
+    background-color: black;
+    grid-area: main;
+    border-radius: 15px;
+    padding: 10px
+}
+.footer {
+    background-color: gray;
+    grid-area: footer;
+    border-radius: 15px;
+    padding: 10px
+}
+}
+/*Laptop*/
+@media (min-width:850px) {
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "sidebar1 content content sidebar2"
+    "footer footer footer footer";
+    height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    grid-gap: 20px;
+}
+.header {
+    grid-area: header;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 10px
+}
+.sidebar1 {
+    grid-area: sidebar1;
+    background-color: black;
+    border-radius: 15px;
+    padding: 10px
+
+}
+.content {
+    grid-area: content;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px
+
+}
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 10px
+}
+.footer {
+    grid-area: footer;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 15px;
+    padding: padding: 10px
+}
+}

@@ -32,7 +32,7 @@
 }
 #pinkbox3 {
     background-color: #EE2E84;
-    grid-row:  / 4;
+    grid-row:  4/ 4;
     grid-column: 1 / 1;
     height: 25vh
 }
@@ -67,8 +67,8 @@
     grid-column: 1 / 1;
     height: 25vh
 }
-        
 }
+
 /*larger screen*/
 @media only screen and (min-width: 768px) {
 * {
