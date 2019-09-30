@@ -1,0 +1,198 @@
+/*mobile*/
+@media (max-width: 600px) {
+body {
+    font-family: 'roboto', sans-serif;
+    border-radius: 10px;
+    color: white;
+    
+    
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "main"
+    "footer"
+    "aside1"
+    "aside2";
+    grid-template-rows: auto, auto, auto, auto, auto, auto, auto;
+    grid-template-columns: 1fr;
+    grid-gap: 5px
+}
+.nav {
+    grid-area: nav;
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    justify-content: center
+
+}
+.header {
+    grid-area: header;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 6vh;
+    padding: 20px;
+    display: flexbox
+}
+.main {
+    grid-area: main;
+    background-color: gray;
+    
+    border-radius: 10px
+}
+.footer {
+    grid-area: footer;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.aside1 {
+    grid-area: aside1;
+    background-color: gray;
+    display: flexbox;
+    border-radius: 10px
+}
+.aside2 {
+    grid-area: aside2;
+    background-color: gray;
+    display: flexbox;
+    border-radius: 10px
+}
+img {
+    height: 20vh;
+    width: auto
+}
+}
+/*tablet*/
+@media (min-width: 601px) and (max-width: 850px) {
+    body {
+        font-family: 'roboto', sans-serif;
+        color: white;
+        border-radius: 10px
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "nav nav nav aside1"
+        "main main main aside2"
+        "footer footer footer footer";
+        grid-template-rows: auto, auto, auto, auto;
+        grid-template-columns: 2fr, 2fr, 2fr, 1fr;
+        grid-gap: 5px
+    }
+    .nav {
+        grid-area: nav;
+        background-color: gray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center
+    }
+    .nav > a {
+        color: white;
+        text-decoration: none
+    }
+        
+    }
+    .header {
+        grid-area: header;
+        background-color: black;
+        border-radius: 10px;
+        font-size: 6vh
+    }
+    .main {
+        grid-area: main;
+        border-radius: 10px;
+        background-color: gray;
+        padding-left: 30px
+        
+    }
+    .aside1 {
+        grid-area:aside1;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .aside2 {
+        grid-area: aside2;
+        background-color: black;
+        border-radius: 10px;
+        text-align: center
+        
+
+    }
+    .footer {
+        background-color: gray;
+        grid-area: footer;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between
+    }
+    img {
+        height: auto;
+        width: 100px;
+        padding-left: 30px
+    }
+/*laptop*/
+@media (min-width: 851px) {
+body {
+        font-family: 'roboto', sans-serif;
+        color: white;
+    }
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "aside1 aside1 aside2 aside2"
+    "footer footer footer footer";
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: auto, auto, auto, auto;
+    grid-gap: 5px
+}
+.nav {
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    border-radius: 10px
+}
+.nav > a {
+    color: white;
+    text-decoration: none
+}
+    
+.header {
+    grid-area: header;
+    background-color: gray
+}
+.main {
+    grid-area: main;
+    background-color: gray;
+    height: 40vh;
+    padding-top: 30px
+}
+.aside1 {
+    grid-area: aside1
+}
+.aside2 {
+    grid-area: aside2
+}
+.footer {
+    grid-area: footer;
+    background-color: black
+}
+}
