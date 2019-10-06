@@ -1,0 +1,259 @@
+/*mobile*/
+@media (max-width: 700px) 
+{
+    body {
+        background-color: #3D3D3D
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+        height: 100vh;
+        font-size: 2em;
+        color: white;
+        font-family: 'questrial', sans-serif
+        
+        
+    }
+    .header {
+        grid-area: header;
+        background-color: #45858C;
+        height: 10vh;
+        letter-spacing: 5px;
+        padding-top: 10px
+
+    }
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px
+
+    }
+    .nav > a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding-top: 10px
+    }
+    .main {
+        grid-area: main;
+    }
+    .engage {
+        font-size: 10vh;
+        font-family: 'questrial', sans-serif
+    }
+    .persuade {
+        font-size: 10vh;
+        font-family: 'questrial', sans-serif
+    
+    }
+    .p2 {
+        padding-bottom: 60px
+    }
+    .aside {
+        grid-area: aside;
+        background-color: #F5D95A;
+        padding: 50px;
+        color: #45858C
+        
+    }
+    .aside > ul {
+        list-style-type: none;
+        padding: 20px
+    }
+    .footer {
+        grid-row: footer;
+        
+    }
+    .table1 {
+        padding-top: 50px;
+        border-spacing:  20px ;
+}
+
+td {
+  padding: 10px 0;
+}
+    /*tablet*/
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+    body {
+        background-color: #3D3D3D
+    }
+    /*copy css from tablet sections and then modify as needed*/
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header header nav"
+        "main main main main"
+        "aside footer footer footer";
+        grid-gap: 0px;
+        height: 100vh;
+        font-family: 'questrial', sans-serif;
+        font-size: 2em;
+        color: white;
+        grid-template-rows: 15vh
+    }
+    .header {
+        grid-area: header;
+        background-color: #45858C;
+        height: auto;
+        grid-gap: 0px
+    }
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 20px;
+        background-color: #45858C;
+        
+    }
+    .nav > a {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        color: white;
+        padding-top: 20px;
+    }
+    .main {
+        grid-area: main;
+        padding: 40px
+    }
+    .engage {
+        font-size: 1.5em;
+        font-family: 'questrial', sans-serif
+    }
+    .p2 {
+        font-size: 1em
+    }
+    .persuade {
+        font-size: 1.5em;
+        font-family: 'questrial', sans-serif
+    
+    }
+    
+    .p2 {
+        padding-bottom: 60px;
+        font-size: 1em
+    }
+    .aside {
+        grid-area: aside;
+        background-color: #FFE45F;
+        
+        
+    }
+    ul {
+        list-style-type: none;
+        font-size: .75em;
+        padding: 40px;
+        width: auto;
+        
+        
+    }
+    .footer {
+        grid-area: footer;
+        background-color:#45858C;
+    }
+    .table1 {
+        padding-top: 30px;
+        border-spacing:  20px ;
+        font-size: .75em;
+}
+td {
+  padding: 10px 0;
+}
+}
+@media (min-width: 1001px)
+{
+    body {
+        background-color: #3D3D3D
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header header header"
+        "main main main nav"
+        "main main main nav"
+        "aside aside footer footer";
+        grid-gap: 0px;
+        height: 150vh;
+        font-family: 'questrial', sans-serif;
+        font-size: 2em;
+        color: white;
+    }
+    
+    .header {
+        grid-area: header;
+        background-color: #45858C;
+        height: 20vh;
+        font-size 
+    }
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: flex-start;
+        align-items: flex-end
+    }
+  .nav > a {
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      transition: all .2s ease-in-out
+      
+      
+     
+  }
+  .nav > a:hover  {
+    transform: scale(1.1); }
+
+  }
+    .main {
+        display: flex;
+        grid-area: main;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px
+    }
+    .engage {
+        font-size: 2.5em
+    }
+    .persuade {
+        font-size: 2em
+    }
+    .aside {
+        grid-area: aside;
+        display: flex;
+        flex-direction: row;
+        font-size: .75em;
+        background-color: #FFE45F;
+        color: #45858C;
+        justify-content: center;
+        align-items: center
+    }
+    ul {
+        list-style-type: none;
+    }    
+
+    .footer {
+        grid-area: footer;
+        background-color: #45858C
+        
+    }
+    .table1 {
+        font-size: .75em;
+        padding-top: 20px;
+        padding-left: 80px;
+        border-spacing: 20px
+    }
+}

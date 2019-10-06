@@ -1,0 +1,142 @@
+/*mobile*/
+@media (max-width: 700px)
+{
+    body {
+        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        color: white
+    }
+    .header {
+        grid-area: header
+    }
+    .nav {
+        grid-area: nav
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+        grid-gap: 10px
+    }
+    .a {
+        grid-area: a
+    }
+    .b {
+        grid-area: b
+    }
+    .c {
+        grid-area: c
+    }
+    .d {
+        grid-area: d
+    }
+    .aside {
+        grid-area: aside
+    }
+    .footer {
+        grid-area: footer
+    }
+
+
+}
+/*tablet*/
+@media (min-width: 701px) and (max-width: 999px) {
+    body {
+        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+    }
+    
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header nav nav"
+        "main main main main"
+        "aside aside footer footer";
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        color: white;
+        grid-gap: 10px;
+        height: 100vh
+    }
+    .header {
+        grid-area: header
+    }
+    .nav {
+        grid-area: nav
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c d"
+    }
+    .a {
+        grid-area: a
+    }
+    .b {
+        grid-area: b
+    }
+    .c {
+        grid-area: c
+    }
+    .d {
+        grid-area: d
+    }
+    .aside {
+        grid-area: aside
+    }
+    .footer {
+        grid-area: footer
+    }
+}
+/*laptop*/
+@media (min-width: 1000px) {
+    body {
+        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header nav nav"
+        "main main main aside"
+        "footer footer footer footer";
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        color: white;
+        grid-gap: 10px;
+        height: 100vh
+    }
+    .header {
+        grid-area: header
+    }
+    .nav {
+        grid-area: nav;
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c d"
+    }
+    .aside {
+        grid-area: aside
+    }
+    .footer {
+        grid-area: footer
+    }
+}
