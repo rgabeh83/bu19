@@ -47,11 +47,13 @@
     }
     .engage {
         font-size: 10vh;
-        font-family: 'questrial', sans-serif
+        font-family: 'questrial', sans-serif;
+        font-weight: 900
     }
     .persuade {
         font-size: 10vh;
-        font-family: 'questrial', sans-serif
+        font-family: 'questrial', sans-serif;
+        font-weight: 900
     
     }
     .p2 {
@@ -70,19 +72,14 @@
     }
     .footer {
         grid-row: footer;
-        display: flex;
-        height: 20vh
+        
+        height: 30;
+        align-items: center;
+        font-size: .75em
         
         
     }
-    .table1 {
-        padding-top: 50px;
-        border-spacing:  20px ;
-}
-
-td {
-  padding: 10px 0;
-}
+   
     /*tablet*/
 }
 @media (min-width: 701px) and (max-width: 1000px) {
@@ -128,18 +125,22 @@ td {
     }
     .main {
         grid-area: main;
-        padding: 40px
+        padding: 20px;
+        height: 60vh;
+        padding-bottom: 40px
     }
     .engage {
-        font-size: 1.5em;
-        font-family: 'questrial', sans-serif
+        font-size: 1em;
+        font-family: 'questrial', sans-serif;
+        font-weight: 900
     }
     .p2 {
         font-size: 1em
     }
     .persuade {
         font-size: 1.5em;
-        font-family: 'questrial', sans-serif
+        font-family: 'questrial', sans-serif;
+        font-weight: 900
     
     }
     
@@ -164,15 +165,9 @@ td {
     .footer {
         grid-area: footer;
         background-color:#45858C;
+        height: auto
     }
-    .table1 {
-        padding-top: 30px;
-        border-spacing:  20px ;
-        font-size: .75em;
-}
-td {
-  padding: 10px 0;
-}
+    
 }
 @media (min-width: 1001px)
 {
@@ -226,13 +221,17 @@ td {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 50px
+        padding: 50px;
+        height: 100vh
     }
     .engage {
-        font-size: 2.5em
+        font-size: 2.5em;
+        font-weight: 900;
     }
     .persuade {
-        font-size: 2em
+        font-size: 2em;
+        font-weight: 900
+    }
     }
     .aside {
         grid-area: aside;
@@ -250,7 +249,7 @@ td {
 
     .footer {
         grid-area: footer;
-        background-color: #45858C
+        background-color: #45858C;
         
     }
     .table1 {
