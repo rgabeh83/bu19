@@ -43,7 +43,7 @@
         padding-top: 10px
     }
     .main {
-        grid-area: main;
+        grid-area: main
     }
     .engage {
         font-size: 10vh;
@@ -70,6 +70,9 @@
     }
     .footer {
         grid-row: footer;
+        display: flex;
+        height: 20vh
+        
         
     }
     .table1 {
@@ -194,7 +197,7 @@ td {
         grid-area: header;
         background-color: #45858C;
         height: 20vh;
-        font-size 
+    
     }
     .nav {
         grid-area: nav;

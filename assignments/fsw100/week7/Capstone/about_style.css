@@ -2,7 +2,7 @@
 @media (max-width: 700px)
 {
     body {
-        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+        background-color: #3D3D3D
     }
     .container {
         display: grid;
@@ -12,15 +12,32 @@
         "main"
         "aside"
         "footer";
-        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
         font-size: 2em;
-        color: white
+        color: white;
+        font-family: 'questrial', sans-serif
     }
     .header {
-        grid-area: header
+        grid-area: header;
+        background-color: #45858C;
+        height: 10vh;
+        letter-spacing: 5px;
+        padding-top: 10px
+
     }
     .nav {
-        grid-area: nav
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px
+    }
+    .nav > a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding-top: 10px
     }
     .main {
         grid-area: main;
@@ -30,25 +47,53 @@
         "b"
         "c"
         "d";
-        grid-gap: 10px
+        grid-gap: 10px;
+        padding-top: 40px;
+       
+        text-align: center     
     }
+    
     .a {
-        grid-area: a
+        grid-area: a;
+        
     }
     .b {
-        grid-area: b
+        grid-area: b;
+        
     }
     .c {
-        grid-area: c
+        grid-area: c;
+        
     }
     .d {
-        grid-area: d
+        grid-area: d;
+        
+    }
+    img {
+        width: 50%;
+        height: auto;
     }
     .aside {
-        grid-area: aside
+        grid-area: aside;
+        background-color: #F5D95A;
+        padding: 50px;
+        color: #45858C
+        
+    }
+    .aside > ul {
+        list-style-type: none;
+        padding: 20px
     }
     .footer {
         grid-area: footer
+    }
+    .footer .table1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .75em;
+        padding-top: 50px;
+        padding-bottom: 100px
     }
 
 
@@ -56,7 +101,7 @@
 /*tablet*/
 @media (min-width: 701px) and (max-width: 999px) {
     body {
-        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+        background-color: #3D3D3D
     }
     
     .container {
@@ -64,25 +109,52 @@
         grid-template-areas:
         "header header nav nav"
         "main main main main"
-        "aside aside footer footer";
-        font-family: Arial, Helvetica, sans-serif;
+        "aside aside aside aside"
+        "footer footer footer footer";
+        grid-gap: 0px;
+        height: 150vh;
+        font-family: 'questrial', sans-serif;
         font-size: 2em;
         color: white;
-        grid-gap: 10px;
-        height: 100vh
     }
     .header {
-        grid-area: header
+        grid-area: header;
+        background-color: #45858C;
+        height: 15vh
+    
     }
     .nav {
-        grid-area: nav
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 20px;
+        background-color: #45858C;
+        
+        
     }
+    .nav > a {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        color: white;
+        padding-top: 20px;
+    }
+
     .main {
         grid-area: main;
         display: grid;
         grid-template-areas:
         "a b"
-        "c d"
+        "c d";
+        padding: 60px;
+        text-align: center
+        
+    }
+    img {
+        width: 60%;
+        height: auto;
     }
     .a {
         grid-area: a
@@ -96,47 +168,100 @@
     .d {
         grid-area: d
     }
+  
+    }
     .aside {
-        grid-area: aside
+        grid-area: aside;
+        background-color: #F5D95A;
+        padding: 50px;
+        color: #45858C;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: .75em
+        
+    }
+    .aside > ul {
+        list-style-type: none;
+        padding: 20px;
+        font-size: 1em
     }
     .footer {
-        grid-area: footer
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
     }
-}
+    .footer .table1 {
+        font-size: .70em;
+        padding-top: 40px
+        
+    }
 /*laptop*/
 @media (min-width: 1000px) {
     body {
-        background-image: url(imgs/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg)
+        background-color: #3D3D3D
     }
     .container {
         display: grid;
         grid-template-areas:
-        "header header nav nav"
-        "main main main aside"
+        "header header header header"
+        "main main nav nav"
+        "aside aside aside aside"
         "footer footer footer footer";
-        font-family: Arial, Helvetica, sans-serif;
+        grid-gap: 0px;
+        height: 150vh;
+        font-family: 'questrial', sans-serif;
         font-size: 2em;
         color: white;
-        grid-gap: 10px;
-        height: 100vh
     }
     .header {
-        grid-area: header
-    }
-    .nav {
-        grid-area: nav;
-    }
+        
+        grid-area: header;
+        background-color: #45858C;
+        height: 20vh;}
+    
+        .nav {
+            grid-area: nav;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            justify-content: flex-start;
+            align-items: flex-end
+        }
+      .nav > a {
+          padding: 20px;
+          text-decoration: none;
+          color: white;
+          transition: all .2s ease-in-out
+      }
+      .nav > a:hover  {
+        transform: scale(1.1); }
+    
     .main {
         grid-area: main;
         display: grid;
         grid-template-areas: 
         "a b"
-        "c d"
+        "c d";
+        height: 80vh;
+        padding: 60px;
+        text-align: center
+    }
+    img {
+            width: 70%;
+            height: auto;
+        
     }
     .aside {
-        grid-area: aside
+        grid-area: aside;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+                
     }
     .footer {
-        grid-area: footer
+        grid-area: footer;
+        padding-bottom: 50px
     }
 }
