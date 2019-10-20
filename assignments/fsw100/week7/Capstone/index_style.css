@@ -126,7 +126,7 @@
     .main {
         grid-area: main;
         padding: 20px;
-        height: 60vh;
+        height: 80vh;
         padding-bottom: 40px
     }
     .engage {
