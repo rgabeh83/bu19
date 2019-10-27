@@ -10,4 +10,4 @@ var shopper = {
 }
 }
 
-console.log(shopper)
+console.log(shopper)  
