@@ -5,10 +5,6 @@ function sum(num1, num2) {
    console.log(result)
 
 
-
-/*Write a function that accepts three numbers as parameters, and returns the largest of those numbers.
-*/
-
 function largestOf3(a, b, c){
     return Math.max(a, b,c)
 }
