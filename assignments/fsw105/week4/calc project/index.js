@@ -1,7 +1,7 @@
 const readline = require("readline-sync")
 
 function add(num1 , num2) {
-    return num1 + num2 
+    return parseInt(num1) + parseInt(num2) 
 }
 
 function mult(num1 , num2) {
@@ -12,7 +12,7 @@ function div(num1 , num2) {
     return num1 / num2
 }
 function sub(num1 , num2) {
-    return num1 - num2
+    return parseInt(num1) - parseInt(num2)
 }
 
 var num1 = readline.question("Please enter your first number");
