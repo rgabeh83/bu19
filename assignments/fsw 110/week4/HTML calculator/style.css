@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.multiply {
+    background-color: bisque;
+    height: 200px;
+
+}
+.add {
+    background-color: purple;
+    height: 200px
+}
+.subtract {
+    background-color: skyblue;
+    height: 200px
+}
