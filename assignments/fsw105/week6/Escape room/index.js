@@ -13,7 +13,7 @@ if (choice == 1) {
     console.log("Bye Felecia!!!")
 } 
 else if (choice == 2) {
-     if (Math.round(Math.random() % 2) === 0) {
+     if (Math.round(Math.random() * 20 % 2) === 0) {
         console.log("YOU HAVE ESCAPED!!")
      }
     else (console.log("No Key"))  

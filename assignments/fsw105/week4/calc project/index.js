@@ -36,3 +36,4 @@ else if (operation === "mult") {
 else if (operation === "div") {
     console.log(div(num1, num2))
 }
+
