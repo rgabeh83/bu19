@@ -1,24 +1,25 @@
 console.log(document)
 
-const api = document.createElementById("api")
-
-        "id": 2001"
-        "answer": "a tack",
-        "question": "One can be of thumb, carpet, or tie variety",
-        "value": 300,
-        "airdate": "1987-06-22T12:00:00.000Z",
-        "created_at": "2014-02-11T22:48:14.985Z",
-        "updated_at": "2014-02-11T22:48:14.985Z",
-        "category_id": 51,
-        "game_id": null,
+const api = [
+    {
+        "id": 147646,
+        "answer": "a whole note",
+        "question": "A note equivalent in duration to 4 quarter notes",
+        "value": 1000,
+        "airdate": "2014-05-02T12:00:00.000Z",
+        "created_at": "2015-01-22T02:34:32.209Z",
+        "updated_at": "2015-01-22T02:34:32.209Z",
+        "category_id": 17045,
+        "game_id": 4488,
         "invalid_count": null,
         "category": {
-            "id": 51,
-            "title": "4-letter words",
-            "created_at": "2014-02-11T22:47:25.679Z",
-            "updated_at": "2014-02-11T22:47:25.679Z",
-            "cles_count": 165
+            "id": 17045,
+            "title": "like, totally",
+            "created_at": "2015-01-18T18:11:00.759Z",
+            "updated_at": "2015-01-18T18:11:00.759Z",
+            "clues_count": 10
         }
-')'
-
+    }
+]
+document.getElementById("body")
 document.body.append(api)

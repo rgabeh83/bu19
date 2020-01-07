@@ -37,5 +37,5 @@ const planet = {
 
 var name = document.getElementById("name").textContent(planet.name)
 var climate = document.getElementById("climate").textContent(planet.climate)
-var population = document.getElementById("population").textContent(planet.population)
+var population = document.getElementById("population").innerText= ("planet.population")
 
