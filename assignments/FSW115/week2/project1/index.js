@@ -2,16 +2,16 @@ console.log(document)
 
 
 const planet = {
-	"name": "Tatooine",
-	"rotation_period": "23",
-	"orbital_period": "304",
-	"diameter": "10465",
-	"climate": "arid",
-	"gravity": "1 standard",
-	"terrain": "desert",
-	"surface_water": "1",
-	"population": "200000",
-	"residents": [
+	name: "Tatooine",
+	rotation_period: "23",
+	orbital_period: "304",
+	diameter: "10465",
+	climate: "arid",
+	gravity: "1 standard",
+	terrain: "desert",
+	surface_water: "1",
+	population: "200000",
+	residents: [
 		"https://swapi.co/api/people/1/",
 		"https://swapi.co/api/people/2/",
 		"https://swapi.co/api/people/4/",
@@ -35,7 +35,8 @@ const planet = {
 	"url": "https://swapi.co/api/planets/1/"
 }
 
-var name = document.getElementById("name").textContent(planet.name)
+
+
 var climate = document.getElementById("climate").textContent(planet.climate)
-var population = document.getElementById("population").innerText= ("planet.population")
+var population = document.getElementById("population").textContent = ("20000")
 
